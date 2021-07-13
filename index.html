@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="small-screen.css">
+  <script type="text/javascript" src="script.js"></script>
+  <title>Frontend Mentor | [Blogr]</title>
+</head>
+<body>
+  <div class="bg-color-class">
+    <div class="bg-image">
+      <div class="content-wrap">
+        <div class="menu-head-mobile">
+          <div class="small-screen-logo"><img alt="page-logo" src="images/logo.svg"></div>
+          <div onclick="showHamburger()" class="hamburger-cont"><img src="images/icon-hamburger.svg" alt=""></div>
+        </div>
+        <nav class="content-font">
+          <div class="nav-main-wrap flex-row">
+            <div class="img-logo"><img alt="page-logo" src="images/logo.svg"></div>
+            <div class="nav-element">
+              <div onclick="toggleFunc(0)" class="nav-ele-lead hover-underline cursor-pointer">Product<span class="arrow-bg"></span></div>
+              <ul class="toggle-display">
+                <li>Overview</li>
+                <li>Pricing</li>
+                <li>Marketplace</li>
+                <li>Features</li>
+                <li>Integrations</li>
+              </ul>
+            </div>
+            <div class="nav-element">
+              <div onclick="toggleFunc(1)" class="nav-ele-lead hover-underline cursor-pointer">Company<span class="arrow-bg"></span></div>
+              <ul class="toggle-display">
+                <li>About</li>
+                <li>Team</li>
+                <li>Blog</li>
+                <li>Careers</li>
+              </ul>
+            </div>
+            <div class="nav-element">
+              <div onclick="toggleFunc(2)" class="nav-ele-lead hover-underline cursor-pointer">Connect<span class="arrow-bg"></span></div>
+              <ul class="toggle-display">
+                <li>Contact</li>
+                <li>Newsletter</li>
+                <li>LinkedIn</li>
+              </ul>
+            </div>
+          </div>
+          <div class="nav-right flex-row">
+            <div class="n-v-1 cursor-pointer hover-underline">Login</div>
+            <div class="n-v-2 cursor-pointer hover-effect-1">Sign Up</div>
+          </div>
+        </nav>
+        <section class="showcase">
+          <h1 class="heading-font">A modern publishing platform</h1>
+          <p class="content-font">Grow your audience and build your online brand</p>
+          <div class="flex-row show-btns content-font">
+            <div class="s-b-1 cursor-pointer hover-effect-1">Start for Free</div>
+            <div class="s-b-2 cursor-pointer hover-effect-2">Learn More</div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-color future">
+    <div class="content-wrap future">
+      <h2 class="heading-font text-center" >Designed for the future</h2>
+      <div class="future-img mobile"><img src="images/illustration-editor-mobile.svg" alt=""></div>
+      <article class="future-article">
+        <div class="heading-font">Introducing an extensible editor</div>
+        <p class="content-font">Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+          The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+          videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+          change the looks of a blog.</p>
+      
+        <div class="heading-font">Robust content management</div>
+        <p class="content-font">Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+          by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
+      </article>
+      
+    </div>
+  </div>
+        
+        
+      
+  <div class="bg-color infra">
+    <div class="content-wrap infra">
+      <div class="img-infra">
+        <img alt="" src="images/illustration-phones.svg">
+      </div>
+      <div class="text-infra">
+        <div  class="heading-font">State of the Art Infrastructure</div>
+        <p class="content-font">
+          With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+          This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-color-laptop">
+    <div class="content-wrap laptop">
+      <div class="img-laptop">
+        <img class="laptop-deskview" src="images/illustration-laptop-desktop.svg" alt="">
+        <img class="laptop-mobileview" src="images/illustration-laptop-mobile.svg" alt="">
+      </div>
+      <article>
+        <div class="heading-font">Free, open, simple</div>
+        <p class="content-font">Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+        features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+        and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
+
+        <div class="heading-font">Powerful tooling</div>
+        <p class="content-font">Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+        capable of producing even the most complicated sites.</p>
+      </article>
+    </div>
+  </div>
+  <footer class="bg-class">
+    <div class="content-wrap flex-row">
+      <div class="img-logo"><img alt="page-logo" src="images/logo.svg"></div>
+      <ul>
+        <li class="li-lead">Product</li>
+
+        <li>Overview</li>
+        <li>Pricing</li>
+        <li>Marketplace</li>
+        <li>Features</li>
+        <li>Integrations</li>
+      </ul>
+      <ul>
+        <li class="li-lead">Company</li>
+
+        <li>About</li>
+        <li>Team</li>
+        <li>Blog</li>
+        <li>Careers</li>
+      </ul>
+        <ul>
+          <li class="li-lead">Connect</li>
+        
+          <li>Contact</li>
+          <li>Newsletter</li>
+          <li>LinkedIn</li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

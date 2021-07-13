@@ -1,0 +1,319 @@
+/* Font-Overpass for Heading */
+/* Font-Ubuntu for main-content */
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+
+*, 
+*::after,
+*::before {
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+img {
+    width:100%;
+}
+.menu-head-mobile{
+    display:none;
+}
+.cursor-pointer {
+    cursor:pointer;
+}
+.hover-underline:hover {
+    text-decoration:underline;
+    opacity:1;
+}
+.hover-effect-1:hover {
+    color:#fff;
+    background:rgba(255, 122, 133, 0.5);
+}
+.hover-effect-2:hover {
+    color:rgb(255, 122, 133);
+    background:#fff;
+}
+.flex-row {
+    display:flex;
+}
+.flex-col {
+    display:flex;
+    flex-direction:column;
+}
+.text-center {
+    text-align:center;
+}
+.heading-font {
+    font-family:'Overpass', sans-serif;
+}
+.content-font {
+    font-family:'Ubuntu', sans-serif;
+}
+ul {
+    list-style:none;
+} 
+/* --- Header and Showcase Section-Start --- */
+.bg-color-class {
+    background:linear-gradient(to right, hsl(13, 100%, 72%), 30%, hsl(353, 100%, 62%));
+    border-radius:0 0 0 150px;
+}
+.content-wrap {
+    width:85%;
+    margin:auto;
+}
+.bg-image {
+    background:url('images/bg-pattern-intro.svg') no-repeat 10% center/150%;
+}
+nav {
+    color:#fff;
+    display:flex;
+    justify-content:space-between;
+    padding-top:60px;
+    font-size:14px;
+    user-select:none;
+}
+.n-v-1 {
+    padding-top:12.5px;
+}
+.n-v-2 {
+    font-weight:700;
+    color:hsl(353, 100%, 62%);
+    background:#fff;
+    margin-left:20px;
+    padding:12.5px 25px;
+    height:max-content;
+    display:inline-block;
+    border-radius:20px;
+}
+.nav-element {
+    position:relative;
+    top:12.5px;
+}
+.nav-element {
+    margin-left:10px;
+}
+.nav-ele-lead .arrow-bg {
+    display:inline-block;
+    position:relative;
+    margin-left:7.5px;
+    top:3px;
+    height:10px;
+    width:10px;
+    background:url('images/icon-arrow-light.svg') no-repeat;
+}
+.nav-ele-lead {
+    opacity:0.8;
+}
+.toggle-display {
+    visibility:hidden;
+    color:#000;
+    background:#fff;
+    margin-top:15px;
+    padding-right:30px;
+    padding-top:15px;
+    padding-bottom:15px;
+    box-shadow:2px 20px 8px rgba(0,0,0,0.05), -2px -2px 8px rgba(0,0,0,0.05);
+    width:125px;
+    position:relative;
+    z-index:100;
+    transition:height 2s ease-in-out;
+}
+.nav-element.active .toggle-display {
+    visibility:visible;
+}
+.nav-element.active .arrow-bg {
+    transform:rotate(180deg);
+    position:relative;
+    top:0;
+}
+.nav-element:nth-child(2) {
+    margin-left:75px;
+}
+nav ul li {
+    line-height:35px;
+}
+.nav-ele-lead,
+.toggle-display li {
+    padding-left:20px;
+}
+.toggle-display li:hover {
+    cursor:pointer;
+    font-weight:500;
+    padding-right:25px;
+}
+.showcase h1 {
+    font-weight:600;
+    font-size:60px;
+}
+.showcase {
+    position:relative;
+    padding-top:-100px;
+    top:-100px;
+    color:#fff;
+    width:max-content;
+    margin:auto;
+    user-select:none;
+}
+.showcase p,
+.show-btns {
+    font-size:16px;
+    font-weight:400;
+    width:max-content;
+    margin:auto;
+}
+.showcase p {
+    margin-top:20px;
+}
+.show-btns {
+    margin-top:40px;
+}
+.s-b-1 {
+    margin-right:10px;
+    padding:12.5px 20px;
+    border-radius:20px;
+    font-weight:700;
+    color:hsl(355, 100%, 74%);
+    background:#fff;
+}
+.s-b-2 {
+    font-weight:700;
+    margin-left:10px;
+    padding:10px 20px;
+    border-radius:20px;
+    border:2px solid #fff;
+}
+/* --- Header & Showcase Section-End --- */
+
+/* --- Future Design Section-Start --- */
+.bg-color.future {
+    /* background:rgba(199, 206, 212,0.2); */
+    position:relative;
+    padding-top:50px;
+    /* top:-150px; */
+    z-index:-100;
+}
+.content-wrap.future {
+    margin:0 0 0 7.5%;
+    width:92.5%;
+    padding-right:0;
+    margin-right:0;
+    padding-top:50px;
+    padding-bottom:100px;
+    background:url('images/illustration-editor-desktop.svg') no-repeat;
+    background-position:right;
+    background-size:45%;
+}
+.future article {
+    width:45%;
+}
+.future .heading-font {
+    color:hsl(237, 17%, 21%);
+    margin-bottom:100px;
+}
+.future h2 {
+    font-size:48px;
+    width:90%;
+}
+.future div.heading-font {
+    font-size:28px;
+    font-weight:600;
+    margin-top:50px;
+    margin-bottom:20px;
+}
+.future-article p {
+    font-size:16px;
+    line-height:30px;
+    color:hsl(207, 13%, 34%);
+}
+
+/* --- Future Design Section End --- */
+
+/* --- Infra Section Start --- */
+.content-wrap.infra {
+    margin-left:0;
+    background:url('images/bg-pattern-circles.svg') no-repeat;
+    background-size:725px;
+    background-position:-160px -325px;
+    width:92.5%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;    
+}
+.bg-color.infra {
+    margin:0;
+    background:hsl(237, 17%, 21%);
+    color:hsl(0, 0%, 100%);
+    border-radius:0 150px 0 150px;
+    position:relative;
+}
+.infra .text-infra {
+    margin-left:60px;
+    width:60%;
+}
+.text-infra div {
+    font-size:45px;
+    font-weight:600;
+}
+.text-infra p {
+    margin-top:30px;
+    font-size:16px;
+    font-weight:400;
+}
+/* --- Infra Section End --- */ 
+
+/* --- Laptop Section Start --- */
+.content-wrap.laptop {
+    padding-top:75px;
+    padding-bottom:75px;
+    display:flex;
+    margin-left:0;
+    width:92.5%;
+    align-items:center;
+}
+.img-laptop {
+    width:55%;
+}
+.laptop article {
+    width:45%;
+    margin-left:50px;
+}
+.laptop .heading-font {
+    color:hsl(237, 17%, 21%);
+    font-size:28px;
+    font-weight:600;
+    margin-bottom:20px;
+}
+.laptop article p {
+    line-height:30px;
+    font-size:16px;
+    color:hsl(207, 13%, 34%);
+}
+.laptop p:nth-child(2) {
+    margin-bottom:50px;
+}
+/* --- Laptop Section End --- */
+footer.bg-class {
+    background:hsl(240, 10%, 16%);
+    color:#fff;
+    font-family:'Ubuntu', sans-serif;
+    font-size:14px;
+    border-radius:0 125px 0 0 ;
+    position:relative;
+    /* top:-550px;
+    z-index:100; */
+}
+footer .flex-row {
+    justify-content:space-around;
+    padding:75px 0 75px 0;
+}
+footer ul li {
+    line-height:25px;
+    opacity:0.7;
+}
+footer ul .li-lead{
+    margin-bottom:15px;
+    opacity:1;
+}
+footer ul li:hover {
+    text-decoration:underline;
+    cursor:pointer;
+}
+

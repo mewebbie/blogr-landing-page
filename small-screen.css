@@ -1,0 +1,222 @@
+.future-img.mobile,
+.laptop-mobileview {
+    display:none;
+}
+@media (max-width:900px) {
+
+    /* --- Hamburger Menu Design Start--- */
+    nav .img-logo,
+    .toggle-display{
+        display:none;
+    }
+    .toggle-display {
+        width:100%;
+        margin:auto;
+        padding:15px 0;
+        /* display:flex; */
+        flex-direction:column;
+        visibility:visible;
+        /* border:2px solid black; */
+        box-shadow:none;
+        background:rgba(219, 219, 219,0.25);
+        border-radius:7.5px;
+        margin-bottom:20px;
+        color:rgb(107, 107, 107);
+    }
+    .nav-element.active .toggle-display {
+        display:flex;
+    }
+    .toggle-display li,
+    .toggle-display li:hover {
+        padding:0;
+    }
+    .toggle-display li:hover {
+        text-decoration:underline;
+    }
+    nav {
+        display:none;
+        flex-direction:column;
+        justify-content:flex-start;
+        /* outline:2px solid black; */
+        padding-top:0;
+        line-height:35px;
+        position:absolute;
+        width:80%;
+        /* right:30px; */
+        background:white;
+        box-shadow:10px 10px 8px rgba(0,0,0,0.1), -10px -5px 8px rgba(0,0,0,0.1);
+    }
+    nav.show {
+        display:flex;
+    }
+    .nav-element:nth-child(2) {
+        margin-left:0;
+    }
+    .nav-main-wrap {
+        font-weight:500;
+        width:95%;
+        flex-direction:column;
+        text-align:center;
+        background:white;
+        color:rgb(0,0,0);
+        padding:20px 0 0 0;
+        margin:0 auto;
+    }
+    .nav-right {
+        border-top:2px solid rgb(148, 148, 148);;
+        background:#fff;
+        color:rgb(0,0,0);
+        width:70%;
+        margin:0 auto;
+        flex-direction:column;
+        text-align:center;
+        padding-bottom:20px;
+    }
+    .n-v-1 {
+        font-weight:500;
+        padding:5px 0 10px 0;
+        line-height:20px;
+    }
+    .n-v-2,
+    .n-v-2:hover {
+        margin:auto;
+        padding:2.5px 30px;
+        color:#fff;
+        background:linear-gradient(to right, hsl(13, 100%, 72%), 30%, hsl(353, 100%, 62%));
+    }
+    .nav-element {
+        position:unset;
+        margin-left:0;
+        padding:0 30px;
+    }
+    .nav-ele-lead {
+        padding-left:0;
+        margin-bottom:7.5px;
+    }
+    .nav-ele-lead:hover {
+        text-decoration:unset;
+    }
+    .nav-ele-lead .arrow-bg {
+        background:url('images/icon-arrow-dark.svg') no-repeat;
+    }
+    .showcase {
+        text-align:center;
+        padding:50px 0;
+        width:100%;
+        position:unset;
+        top:100px;
+    }
+    .showcase h1 {
+        font-size:38px;
+    }
+    .menu-head-mobile {
+        padding-top:60px;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+    }
+    /* --- Hamburger Menu Design End --- */
+
+    /* --- Future Design Start --- */
+    .bg-color.future {
+        padding-top:0px;
+    }
+    .content-wrap.future {
+        margin:auto;
+        background:none;
+        padding-bottom:100px;
+        display:flex;
+        flex-direction:column;
+    }
+    .future .future-article {
+        width:100%;
+        text-align:center;
+    }
+    .future-img.mobile {
+        display:block;
+        margin:30px 0;
+        max-width:500px;
+        align-self:center;
+        cursor:pointer;
+    }
+    .future div.heading-font {
+        margin:0;
+        padding:0 45px;
+    }
+    .future-article p {
+        margin-bottom:50px;
+    }
+    .content-wrap.future h2 {
+        width:100%;
+        font-size:36px;
+        margin-bottom:0;
+    }
+    /* --- Future Design End --- */
+
+    /* --- Infra Section Start --- */
+    .content-wrap.infra {
+        flex-direction:column;
+        background-position:center top -150px;
+        background-size:120%;
+        margin:50px 0 0 0;
+        width:100%;
+    }
+    .img-infra {
+        position:relative;
+        top:-150px;
+    }
+    .text-infra .heading-font {
+        font-size:36px;
+    }
+    .infra .text-infra {
+        width:92.5%;
+        margin:0;
+        position:relative;
+        top:-125px;
+        text-align:center;
+    }
+    /* --- Infra Section End --- */
+
+    .content-wrap.laptop {
+        padding:0 0 50px 0;
+        flex-direction:column;
+        margin:50px 0 0 0;
+        width:100%;
+        text-align:center;
+    }
+    .img-laptop {
+        padding:60px 0 100px 0;
+        max-width:550px;
+        align-self:center;
+    }
+    .img-laptop ,
+    .laptop article {
+        width:92.5%;
+        margin:0;
+        overflow:hidden;
+    }
+    .img-laptop .laptop-deskview {
+        display:none;
+    }
+    .img-laptop .laptop-mobileview {
+        display:block;
+        width:100%;
+        transform:scale(1.4);
+        max-width:550px;
+        align-self:center;
+    }
+
+    footer .content-wrap {
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+    }
+    footer .img-logo {
+        max-width:150px;
+        align-self:center;
+    }
+    footer .li-lead {
+        margin-top:45px;
+    }
+
+}
