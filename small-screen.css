@@ -106,6 +106,9 @@
         position:unset;
         top:100px;
     }
+    showcase p {
+        width:100%;
+    }
     .showcase h1 {
         font-size:38px;
     }
