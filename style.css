@@ -156,7 +156,8 @@ nav ul li {
 .show-btns {
     font-size:16px;
     font-weight:400;
-    width:max-content;
+    width:100%;
+    text-align:center;
     margin:auto;
 }
 .showcase p {
@@ -164,6 +165,7 @@ nav ul li {
 }
 .show-btns {
     margin-top:40px;
+    justify-content:center;
 }
 .s-b-1 {
     margin-right:10px;
